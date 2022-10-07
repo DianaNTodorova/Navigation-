@@ -1,0 +1,167 @@
+header {
+  background-color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul a,
+nav ul li {
+  display: inline-block;
+  margin: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: #ffff;
+}
+
+nav ul li:hover {
+  background-color: orange;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 45px;
+  max-width: 45px;
+  width: 100%;
+  color: #ffff;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  nav {
+    max-width: 800px;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    margin-right: 3rem;
+  }
+  ul {
+    position: fixed;
+    top: 150px;
+    background-color: black;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40%;
+    height: 100vh;
+    float: left;
+    left: -100%;
+  }
+  .tabs {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    text-align: center;
+  }
+  .tabs .tabs:hover {
+    background-color: orange;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    margin-right: 3rem;
+  }
+  ul {
+    position: fixed;
+    top: 150px;
+    background-color: black;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: 100vh;
+    float: left;
+    left: -100%;
+    font-size: 15px;
+  }
+  .tabs {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 1em;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .tabs .tabs:hover {
+    background-color: orange;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .tabs .link {
+    margin: 0;
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
